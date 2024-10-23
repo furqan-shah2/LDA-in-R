@@ -23,12 +23,13 @@ and to topics appearing in various documents.
 
 The two main outputs of an LDA model are:
 
-Beta: This represents the probability of each word belonging to each
-topic. It helps to identify the most significant words for each topic,
-allowing us to understand what the topic is about. Gamma: This indicates
-the probability of each topic occurring within each document. It helps
-to determine which topics are most prevalent in each document, revealing
-the thematic structure across the corpus.
+- **Beta**: This represents the probability of each word belonging to
+  each topic. It helps to identify the most significant words for each
+  topic, allowing us to understand what the topic is about.
+- **Gamma**: This indicates the probability of each topic occurring
+  within each document. It helps to determine which topics are most
+  prevalent in each document, revealing the thematic structure across
+  the corpus.
 
 This tutorial will guide through performing Latent Dirichlet Allocation
 (LDA) topic modeling in R using the `topicmodels` package, covering:
