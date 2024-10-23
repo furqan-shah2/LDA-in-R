@@ -9,13 +9,29 @@ In this tutorial, we will apply Latent Dirichlet Allocation (LDA) topic
 modeling on data extracted from 23 companies’ annual reports (available
 in the repository for this tutorial). The dataset is self-annotated,
 with narratives classified into the following categories for each
-company’s annual report: **Financial**, **Human**, **Intellectual**,
-**Natural**, **Social & Relationship**, **Manufactured**, and an
-**Unclassified** category.
+company’s annual report: *Financial*, *Human*, *Intellectual*,
+*Natural*, *Social & Relationship*, *Manufactured*, and an
+*Unclassified* category.
 
-This tutorial will guide you through performing Latent Dirichlet
-Allocation (LDA) topic modeling in R using the `topicmodels` package. We
-will cover:
+LDA is topic modeling technique used to discover hidden topics within a
+collection of text documents. It assumes that each document in a corpus
+is composed of a mix of various topics, and each topic is characterized
+by a distribution of words. The LDA model identifies these distributions
+by examining patterns in word usage across documents. Essentially, LDA
+works by assigning probabilities to words belonging to different topics
+and to topics appearing in various documents.
+
+The two main outputs of an LDA model are:
+
+Beta: This represents the probability of each word belonging to each
+topic. It helps to identify the most significant words for each topic,
+allowing us to understand what the topic is about. Gamma: This indicates
+the probability of each topic occurring within each document. It helps
+to determine which topics are most prevalent in each document, revealing
+the thematic structure across the corpus.
+
+This tutorial will guide through performing Latent Dirichlet Allocation
+(LDA) topic modeling in R using the `topicmodels` package, covering:
 
 - Loading and preprocessing text data
 - Creating a Document-Term Matrix (DTM)
